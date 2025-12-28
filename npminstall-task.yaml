@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
-  name: npminstall
+  name: npm
 spec:
   workspaces:
     - name: source
@@ -19,3 +19,4 @@ spec:
         npm cache clean --force
         echo "***** Running npm install *****"
         npm install
+
